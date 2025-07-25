@@ -82,6 +82,7 @@ header::before {
     width: 100%;
     border-radius: 6px;
     border: none;
+    
 }
 
 .text {
@@ -129,7 +130,7 @@ header::before {
     }
 }
 
-@media only screen and (max-width:786px) {
+@media only screen and (max-width:786px) and (min-width:350px) {
     .icons {
         display: inline-flex;
     }
@@ -181,11 +182,15 @@ header::before {
     .about {
         background-size: cover;
         width: 100%;
+         position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100%;
     }
 
     .text {
         height: 180px;
-        width: 100%;
+        width: 300px;
         padding: 1.5rem 10%;
     }
 }
