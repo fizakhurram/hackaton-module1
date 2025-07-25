@@ -91,8 +91,8 @@ header::before {
 }
 
 .text h1 {
-    padding-top: 100px;
-    padding-left: 40px;
+    padding-top: 180px;
+    padding-left: 60px;
     font-size: 50px;
     color: #fff;
     word-spacing: 0.4rem;
@@ -106,7 +106,7 @@ header::before {
     text-align: left;
     font-size: 20px;
     color: #FFFFFF;
-    padding-left: 30px;
+    padding-left: 60px;
     padding-top: 20px;
 }
 
@@ -115,7 +115,7 @@ header::before {
     background-color: #F857A6;
     height: 40px;
     width: 150px;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 40px;
     border-radius: 4px;
     border: 2px solid white;
