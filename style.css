@@ -157,6 +157,7 @@ header::before {
         background-color: #F857A6;
         overflow: hidden;
         opacity: 0.9;
+        box-shadow: 0.5rem 0.5rem 35px grey;
     }
 
     #check:checked .navbar {
@@ -166,7 +167,6 @@ header::before {
 
     .navbar a {
         display: block;
-        flex-direction: column;
         text-align: center;
         margin: 1.5rem 0;
         font-size: 1.1rem;
@@ -184,8 +184,8 @@ header::before {
     }
 
     .text {
-        height: 300px;
-        width: 600px;
+        height: 180px;
+        width: 100%;
         padding: 1.5rem 10%;
     }
 }
