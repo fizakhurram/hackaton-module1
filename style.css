@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url();
+}
+
+.main {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    padding: 1.3rem 10%;
+    width: 100%;
+    z-index: 100;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.icons {
+    display: none;
+    position: absolute;
+    right: 5%;
+    font-size: 30px;
+
+}
+
+#check {
+    display: none;
+}
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar button {
+    background-color: #fff;
+    color: #FF5858;
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    border: 2px solid #F857A6;
+    font-weight: 400;
+}
+
+.about {
+    background-image: url(images/b083a2b51c852e4ed249113fcc9de610d5e7b380.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+}
+
+.text {
+    height: 800px;
+    width: 600px;
+    text-align: left;
+}
+
+.text h1 {
+    padding-top: 100px;
+    padding-left: 40px;
+    font-size: 50px;
+    color: #fff;
+    word-spacing: 0.4rem;
+}
+
+.text h1 span {
+    color: #F857A6;
+}
+
+.text p {
+    text-align: left;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.text button {
+    color: white;
+    background-color: #F857A6;
+    height: 40px;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+/* responsive */
+
+@media only screen and (max-width:992px) {
+    header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media only screen and (max-width:786px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    .navbar {
+        height: 0;
+        background-color: #F857A6;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F857A6;
+        overflow: hidden;
+        opacity: 0.9;
+    }
+
+    #check:checked .navbar {
+        height: 1.73rem;
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+        align-items: center;
+    }
+
+    #check:checked~.navbar {
+        height: 18rem;
+    }
+
+    .about {
+        background-size: cover;
+        width: 100%;
+    }
+
+    .text {
+        height: 300px;
+        width: 600px;
+        padding: 1.5rem 10%;
+    }
+}
